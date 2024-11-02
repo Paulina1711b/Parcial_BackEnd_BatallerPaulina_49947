@@ -1,0 +1,58 @@
+{"info": {
+"_postman_id": "1ee02123-8f81-474a-8ca5-12bea2ee9e42",
+"name": "ParcialMagneto",
+"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+"_exporter_id": "12379877"
+},
+"item": [
+{
+"name": "isMutant",
+"request": {
+"method": "POST",
+"header": [],
+"body": {
+"mode": "raw",
+"raw": "{\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"]}",
+"options": {
+"raw": {
+"language": "json"
+}
+}
+},
+"url": {
+"raw": "http://localhost:8080/mutant",
+"protocol": "http",
+"host": [
+"localhost"
+],
+"port": "8080",
+"path": [
+"/mutant"
+]
+}
+},
+"response": []
+
+},
+{
+"name": "Dna verification stats",
+"request": {
+"method": "GET",
+"header": [],
+"url": {
+"raw": "http://localhost:8080/stats",
+"protocol": "http",
+"host": [
+"localhost"
+],
+"port": "8080",
+"path": [
+"stats"
+]
+}
+},
+"response": []
+}
+]
+
+}
